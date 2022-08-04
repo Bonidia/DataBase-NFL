@@ -1,5 +1,5 @@
 ## Projeto integrador 3: Grupo 3
-Machine Learning applied to Sports - Web scraping/Web Crawler/Search Engine
+Predizendo os Vencedores dos *Playoffs*: Um Estudo de Caso com Aprendizado de Máquina em Partidas de Futebol Americano
 
 ### Instruções
  - Crie um novo ambiente e o ative
