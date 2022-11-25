@@ -15,7 +15,11 @@ from tqdm import tqdm
 
 
 # In[2]:
+##### SE NECESSÁRIO, ALTERE O CAMINHO DO ARQUIVO DE ENTRADA #####
+INPUT_TEAM_STATS = ''
+INPUT_TEAM_SCHEDULE = ''
 
+##### NÃO ALTERE ABAIXO DESTA LINHA #####
 
 full_path = os.getcwd()
 base_path = full_path
@@ -23,8 +27,8 @@ base_path = full_path
 base_path = os.path.join(base_path, 'data')
 
 try:
-    team_stats_file = os.path.join(base_path, '1970-2020.csv')
-    team_schedules_file = os.path.join(base_path, '1970-2020_team_schedule.csv')
+    team_stats_file = INPUT_TEAM_STATS or os.path.join(base_path, '1970-2020.csv')
+    team_schedules_file = INPUT_TEAM_SCHEDULE or os.path.join(base_path, '1970-2020_team_schedule.csv')
     df_stats_raw = pd.read_csv(team_stats_file, sep=';')
     df_schedules_raw = pd.read_csv(team_schedules_file, sep=';')
 
@@ -199,7 +203,7 @@ print('Done')
 # In[]:
 
 # #### kaggle files
-print(f'{"Exporting kaggle data":<30}', end='')
+print(f'{"Exporting kaggle ready data":<30}', end='')
 cols_to_drop = [
     'gs_overtime', 'gs_pts_off', 'gs_pts_def',
     'gs_first_down_off', 'gs_yards_off', 'gs_pass_yds_off',
