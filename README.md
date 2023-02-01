@@ -5,6 +5,9 @@
 
 # Machine Learning applied to Sports - Web scraping/Web Crawler/Search Engine
 
+**Alunos:** Danielle Regina Bernardes, João Fernando V. Franciscon, Fernando Rafael Araújo e Marcos Paulo de Oliveira
+**Orientador**: Robson P. Bonidia
+
 Este projeto é divido em duas partes:
   - **Scraper:** raspa os dados das temporadas e dos times;
   - **Experimentos:** contém *notebooks* com todos os experimentos realizados para construção do modelo para predição dos resultados.
